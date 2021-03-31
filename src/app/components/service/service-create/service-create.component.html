@@ -1,0 +1,19 @@
+<mat-card>
+    <mat-card-title>Novo Serviço</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Email" [(ngModel)]="service.email" name="email" required>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Senha" [(ngModel)]="service.password" name="password" required>
+        </mat-form-field>
+    </form>
+
+    <button mat-raised-button (click)="createService()" color="primary">
+        Salvar
+    </button>
+
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>

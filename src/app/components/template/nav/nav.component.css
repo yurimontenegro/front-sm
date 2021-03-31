@@ -1,0 +1,40 @@
+.header {
+    display: flex; /*  */
+    align-items: center; /* Alinhamento de intem no centro  */
+}
+
+.header a{
+    display: flex;
+    align-items: center;
+    text-decoration: none; /* Nenhuma decoração nos itens */
+}
+
+.header .logo {
+    max-height: 32px; /* Altura máxima da logo */
+}
+
+.header .title-group{
+    padding-left: 30px;
+}
+
+.header .title-group i{
+    padding-right: 5px;
+}
+
+.sidenav {
+    background-color: darkred;
+    width: 250px;
+}
+
+.sidenav a {
+    color: white;
+}
+
+.sidenav i {
+    padding-right: 10px;
+}
+
+.content{
+    padding:16px;
+    background-color: white;
+}
