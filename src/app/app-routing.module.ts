@@ -1,18 +1,20 @@
+import { ProtectGuard } from './login/protect.guard';
+import { LoginGuard } from './login/login.guard';
 import { LoginComponent } from './login/login/login.component';
 import { HomeComponent } from './views/home/home.component';
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes, CanActivate } from '@angular/router';
 import { ServiceCreateComponent } from './components/service/service-create/service-create.component';
 import { ServiceCrudComponent } from './views/service-crud/service-crud.component';
 
-
 const routes: Routes = [{
   path: "", 
-  //component: HomeComponent
-  component: LoginComponent
+  component: LoginComponent,
+  canActivate: [LoginGuard]
 },{
   path: "home", 
-  component: HomeComponent
+  component: HomeComponent,
+  canActivate: [ProtectGuard]
 },{
   path: "services",
   component: ServiceCrudComponent

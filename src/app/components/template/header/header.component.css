@@ -1,0 +1,13 @@
+a {
+    display: flex;
+    align-items: center;
+    text-decoration: none; /* Nenhuma decoração nos itens */
+}
+
+.logo {
+    max-height: 32px; /* Altura máxima da logo */
+}
+
+.username{
+    padding-bottom: top;
+}

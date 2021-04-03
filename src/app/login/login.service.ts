@@ -12,7 +12,9 @@ export class LoginService {
   baseUrl = "http://localhost:8080/login"
 
 
-  constructor(private snackBar: MatSnackBar, private http: HttpClient) { }
+  constructor(private snackBar: MatSnackBar, 
+    private http: HttpClient) 
+     { }
 
   showMessage(msg: string): void{
     this.snackBar.open(msg, 'X', {
